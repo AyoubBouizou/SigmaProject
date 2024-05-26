@@ -55,7 +55,66 @@ Project Structure
 ├── Startup.cs
 └── appsettings.json
 
+### Change Connexion
 
+Create database and table Named 'Candidates' :
+CREATE TABLE Candidates (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    FirstName NVARCHAR(50) NOT NULL,
+    LastName NVARCHAR(50) NOT NULL,
+    Phone NVARCHAR(20),
+    Email NVARCHAR(100) NOT NULL,
+    BestCallTime NVARCHAR(50),
+    LinkedIn NVARCHAR(200),
+    GitHub NVARCHAR(200),
+    Comment NVARCHAR(MAX) NOT NULL,
+    CreatedAt DATETIME NOT NULL DEFAULT GETUTCDATE(),
+    UpdatedAt DATETIME NOT NULL DEFAULT GETUTCDATE()
+);
+
+
+Update the database connection string in appsettings.json:
+
+### SetupProject
+
+Build the project:
+
+dotnet build
+
+Apply migrations and update the database:
+
+dotnet ef database update
+
+
+### Running the Application
+
+To run the application, use the following command:
+
+dotnet run
+
+API Endpoints
+
+POST /api/candidates: Create or update a candidate
+Request body:
+json
+Copier le code
+{
+  "firstName": "name1",
+  "lastName": "name1",
+  "phoneNumber": "123-456-7890",
+  "email": "names@example.com",
+  "preferredCallTime": "9 AM - 5 PM",
+  "linkedInUrl": "https://linkedin.com/in/name",
+  "gitHubUrl": "https://github.com/name",
+  "comments": "Candidate is highly skilled in C# and .NET."
+}
+
+
+### Testing
+
+This project uses NUnit for unit testing. The test classes are located in the TestCandidates project. To run the tests, use the following command :
+
+dotnet test
 
 
 
