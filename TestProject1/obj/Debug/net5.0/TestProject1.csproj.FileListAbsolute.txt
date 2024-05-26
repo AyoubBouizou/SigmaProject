@@ -1,0 +1,6 @@
+F:\SigmaCandidate\TestProject1\bin\Debug\net5.0\CoverletSourceRootsMapping
+F:\SigmaCandidate\TestProject1\obj\Debug\net5.0\TestProject1.csproj.AssemblyReference.cache
+F:\SigmaCandidate\TestProject1\obj\Debug\net5.0\TestProject1.GeneratedMSBuildEditorConfig.editorconfig
+F:\SigmaCandidate\TestProject1\obj\Debug\net5.0\TestProject1.AssemblyInfoInputs.cache
+F:\SigmaCandidate\TestProject1\obj\Debug\net5.0\TestProject1.AssemblyInfo.cs
+F:\SigmaCandidate\TestProject1\obj\Debug\net5.0\TestProject1.csproj.CoreCompileInputs.cache
