@@ -35,3 +35,33 @@ SigmaCandidate is a web developed using .NET Core that provides a REST API for s
 ```bash
 git clone https://github.com/AyoubBouizou/SigmaProject.git
 cd SigmaProject
+
+Project Structure
+
+├── Controllers
+│   └── CandidatesController.cs
+├── Data
+│   ├── CandidateContext.cs
+│   └── Candidate.cs
+├── DTOs
+│   └── CandidateDto.cs
+├── Mappings
+│   └── MappingProfile.cs
+├── Services
+│   └── CandidateService.cs
+├── Tests
+│   └── CandidateServiceTests.cs
+├── Program.cs
+├── Startup.cs
+└── appsettings.json
+
+
+
+
+
+
+
+
+
+
+
